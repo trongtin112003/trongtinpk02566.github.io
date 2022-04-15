@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="./styles/sign-up.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row flex">
+        <div class="col-sm-6 col-sm-offset-2">
+          <form id="frmDangKy">
+            <h3
+              class="logo"
+              style="
+                background-color: #1a94ff;
+                border-radius: 10px;
+                padding: 10px;
+              "
+            >
+              <img
+                src="https://salt.tikicdn.com/ts/upload/ae/f5/15/2228f38cf84d1b8451bb49e2c4537081.png"
+                alt="Logo tiki"
+              />
+            </h3>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                aria-describedby="emailHelp"
+                placeholder="Full Name"
+              />
+              <p class="error error-name"></p>
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                aria-describedby="emailHelp"
+                placeholder="User Name"
+              />
+              <p class="error error-user"></p>
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+                placeholder="Email"
+              />
+              <p class="error error-email"></p>
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Password"
+              />
+              <p class="error error-password"></p>
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="password1"
+                placeholder="Confirm password"
+              />
+              <p class="error error-password1"></p>
+            </div>
+            <select
+              class="form-select"
+              id="role"
+              aria-label="Default select example"
+              placeholder="Full Name"
+            >
+              <option selected>Select access rights</option>
+              <option value="admin">Admin</option>
+              <option value="user">User</option>
+            </select>
+            <p class="error error-role"></p>
+            <p class="success"></p>
+            <button type="submit" class="btn btn-primary btn-submit">
+              Sign Up
+            </button>
+            <div class="padding-top">
+              <a
+                style="text-decoration: none"
+                class="btn btn-link"
+                href="./dangNhap.html"
+                >SIGN IN</a
+              >
+              <a
+                style="text-decoration: none"
+                class="btn-2 btn btn-link"
+                href="index.html"
+                >HOME</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="JS/signIn_signUp.js"></script>
+</html>
